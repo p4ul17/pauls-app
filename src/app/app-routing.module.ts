@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'localmoney',
     loadChildren: () => import('./pages/localmoney/localmoney.module').then( m => m.LocalmoneyPageModule)
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
+  },
 ];
 
 @NgModule({
