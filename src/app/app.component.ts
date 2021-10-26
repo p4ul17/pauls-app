@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public appPages = [
   ];
-  constructor() {}
+  constructor(private router: Router) {}
+  localmoney() {
+    this.router.navigate(['localmoney'])
+  }
+  about() {
+    this.router.navigate(['about'])
+  }
 }
